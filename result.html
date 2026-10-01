@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Exam Result</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <div class="header result-header">
+
+        <h1>🎓 Examination Result</h1>
+
+        <p>Your examination has been completed</p>
+
+    </div>
+
+
+
+    <!-- MAIN RESULT -->
+
+    <div class="result-main">
+
+
+        <!-- STUDENT INFORMATION -->
+
+        <div class="student-result-card">
+
+            <h2>👤 Student Details</h2>
+
+            <p id="studentName"></p>
+
+            <p id="studentRoll"></p>
+
+            <p id="resultSubject"></p>
+
+        </div>
+
+
+
+        <!-- SCORE -->
+
+        <div class="big-result-card">
+
+            <h2>🏆 Your Final Score</h2>
+
+            <div class="score" id="score">
+                0 / 10
+            </div>
+
+            <p id="percentage">
+                0%
+            </p>
+
+            <p id="message">
+                Result
+            </p>
+
+        </div>
+
+
+
+        <!-- STATISTICS -->
+
+        <div class="result-statistics">
+
+            <div class="stat-box correct-stat">
+
+                <div class="stat-icon">
+                    ✅
+                </div>
+
+                <h3>Correct</h3>
+
+                <p id="correctCount">
+                    0
+                </p>
+
+            </div>
+
+
+
+            <div class="stat-box wrong-stat">
+
+                <div class="stat-icon">
+                    ❌
+                </div>
+
+                <h3>Wrong</h3>
+
+                <p id="wrongCount">
+                    0
+                </p>
+
+            </div>
+
+
+
+            <div class="stat-box unattempted-stat">
+
+                <div class="stat-icon">
+                    ⚪
+                </div>
+
+                <h3>Unattempted</h3>
+
+                <p id="unattemptedCount">
+                    0
+                </p>
+
+            </div>
+
+
+
+            <div class="stat-box attempted-stat">
+
+                <div class="stat-icon">
+                    📝
+                </div>
+
+                <h3>Attempted</h3>
+
+                <p id="attemptedCount">
+                    0
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- DETAILED ANALYSIS -->
+
+        <div class="analysis-section">
+
+            <div class="analysis-title">
+
+                <h2>📋 Detailed Question Analysis</h2>
+
+                <p>
+                    Check your answers and the correct answers below.
+                </p>
+
+            </div>
+
+
+            <div id="analysisBox">
+
+                <!-- Questions will appear here -->
+
+            </div>
+
+        </div>
+
+
+
+        <!-- BUTTONS -->
+
+        <div class="result-buttons">
+
+            <button onclick="retakeExam()" class="retake-btn">
+                🔄 Retake Exam
+            </button>
+
+            <button onclick="goHome()" class="home-btn">
+                🏠 Back to Home
+            </button>
+
+        </div>
+
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

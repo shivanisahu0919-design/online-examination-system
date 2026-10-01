@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exam Instructions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>📋 Exam Instructions</h1>
+        <p>Please read the instructions carefully</p>
+    </div>
+
+    <div class="container">
+
+        <div class="card instructions-card">
+
+            <h2>Before You Start</h2>
+
+            <ul>
+                <li>📝 Total Questions: 10</li>
+                <li>⏱️ Time Limit: 10 Minutes</li>
+                <li>✅ Each question has one correct answer.</li>
+                <li>🔄 You can use Previous and Next buttons.</li>
+                <li>📊 Your result will be displayed after submission.</li>
+                <li>⚠️ Make sure you complete the exam before time ends.</li>
+            </ul>
+
+            <button onclick="goToExam()">
+                Start Exam →
+            </button>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        function goToExam() {
+            window.location.href = "exam.html";
+        }
+
+    </script>
+
+</body>
+
+</html>

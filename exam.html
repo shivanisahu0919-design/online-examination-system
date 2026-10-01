@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Examination</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="exam-header">
+        <div>
+            <h1>🎓 Online Examination</h1>
+            <p id="subjectName">Subject</p>
+        </div>
+
+        <div class="exam-timer">
+            ⏱️ <span id="time">10:00</span>
+        </div>
+    </div>
+
+
+    <div class="exam-container">
+
+        <!-- LEFT SIDE -->
+        <div class="question-card">
+
+            <div class="exam-top">
+                <div>
+                    <h2 id="welcome"></h2>
+                    <p id="questionNumber">Question 1 of 10</p>
+                </div>
+            </div>
+
+            <!-- PROGRESS BAR -->
+            <div class="progress-container">
+                <div id="progressBar"></div>
+            </div>
+
+            <!-- QUESTION -->
+            <div id="questionBox"></div>
+
+            <!-- BUTTONS -->
+            <div class="exam-buttons">
+                <button onclick="previousQuestion()" class="previous-btn">
+                    ← Previous
+                </button>
+
+                <button onclick="nextQuestion()" class="next-btn">
+                    Next →
+                </button>
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+        <div class="palette-card">
+
+            <h3>📋 Question Palette</h3>
+
+            <p class="palette-info">
+                Click a number to visit a question
+            </p>
+
+            <div id="questionPalette"></div>
+
+            <div class="palette-legend">
+                <p>🟣 Current</p>
+                <p>🟢 Attempted</p>
+                <p>⚪ Not Attempted</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
